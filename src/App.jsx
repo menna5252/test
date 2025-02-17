@@ -17,12 +17,12 @@ import VerifyResetCode from "./Components/VerifyResetCode/VerifyResetCode";
 import WishList from "./Components/WishList/WishList";
 import { useState } from "react";
 import { Toaster } from "react-hot-toast";
-import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import { RouterProvider, createHashRouter } from "react-router-dom";
 
 function App() {
   const [count, setCount] = useState(0)
 
-  let router = createBrowserRouter([
+  let router = createHashRouter([
     {
       path: "", element: <Layout />, children: [
         { index: true, element: <Home /> },
