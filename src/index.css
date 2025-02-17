@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+a.active{
+  color: theme(colors[green].500);
+ }
+
+ @layer base{
+  h1{
+    @apply text-5xl;
+  };
+  h2{
+    @apply text-4xl;
+  };
+  h3{
+    @apply text-3xl;
+  };
+  h4{
+    @apply text-2xl;
+  };
+  h5{
+    @apply text-xl;
+  };
+  h6{
+    @apply text-lg;
+  };
+ h1,h2,h3,h4,h5,h6{
+  @apply font-semibold;
+ }
+ }
+
+
+ body{
+  font-family: "Roboto", serif;
+ }
+ h1,h2,h3,h4,h5,h6{
+  font-family: "Encode Sans Expanded", serif;
+ }
+ .loaderIcon{
+  animation: spin 1s infinite linear;
+ }
+
+ @keyframes spin {
+  from {
+    transform: scale(1) rotate(0deg);
+}
+to {
+    transform: scale(1) rotate(360deg);
+}
+ }
+
+ .slick-dots li button:before {
+  color: rgb(20, 189, 20);
+  font-size: 8px;
+}
+.slick-dots li.slick-active button:before {
+  color:rgb(41, 114, 41) !important;
+  font-size: 8px;
+}
+.card:hover{
+  box-shadow: 1px 1px 10px #4fa74f;
+
+}
